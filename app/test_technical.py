@@ -37,50 +37,11 @@
 # # if __name__ == "__main__":
 # #     asyncio.run(test())
 
-# d = {1 : 'a', 2 : 'b'}
-# d[1.0] = 'c'
-# print(d)
-
-# lst = [1, 2, 3, 4, 5]
-# for i in lst[:]:
-#     if i % 2 == 0:
-#         lst.remove(i)
-# print(lst)
-
-# def gen():
-#     yield 1
-#     yield 2
-# g = gen()
-# print(list(g), list(g))
-
-# a = [1, 2, 3]
-# b = a
-# a = a + [4, 5]
-# print(b)
-
-# for i in range(5):
-#     if i == 1:
-#         break
-# else:
-#     print("Loop completed without break")
-# print("Done")
-
-# lst = [1, 2, 3, 4]
-# print(lst[1:3][1:2][0])
-
-# lst = [1, 2, 3, 4]
-# for i in lst:
-#     lst.remove(i)
-# print(lst)
-
-# nums = [1, 2, 3, 4]
-# res = [nums.pop(0) for _ in range(len(nums))]
-# print(res)
 
 
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyCeAMHEtdGfCdWoZf-HBvxzQhG1IfleJyI")
+genai.configure(api_key="YOUR_GOOGLE_API_KEY")  # Replace with your actual API key
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
